@@ -1,25 +1,10 @@
-<div class="menu">
-	<h3>Menu <a href="#" class="menu-toggle">&times;</a></h3>
-	<ul>
-		<li><a href="#">Home<i class="fa fa-angle-right"></i></a></li>
-		<li><a href="#">Tour Information<i class="fa fa-angle-right"></i></a></li>
-		<li><a href="#">Tour Pricing<i class="fa fa-angle-right"></i></a></li>
-		<li><a href="#">Photo Gallery<i class="fa fa-angle-right"></i></a></li>
-		<li><a href="#">News &amp; Events<i class="fa fa-angle-right"></i></a></li>
-	</ul>
-</div>
-
-<div class="header">
-	<a href="#" class="menu-toggle"><i class="fa fa-bars"></i> Menu</a>
-</div>
-
 <div class="main">
     <div class="row">
         <div class="container">
             <div class="content col-md-6 pull-right">
               <h1>Create and share stories</h1>
               <p>
-                <a class="btn btn-primary" href="#">Learn more</a>
+                <%= link_to "Learn more", about_path, :class => "btn btn-primary" %>
               </p>
             </div>
         </div>
@@ -41,13 +26,8 @@
     <div class="container">
         <h2>Discover stories</h2>
         <p>
-            <a class="btn btn-primary" href="#">Learn more</a>
+            <%= link_to "Learn more", about_path, :class => "btn btn-primary" %>
         </p>
-    </div>    
-</div>
-<div class="footer">
-    <div class="container">
-        <p>A Shutterbugg project</p>
     </div>    
 </div>
 

@@ -2,10 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
+html, body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .menu {
@@ -21,7 +21,7 @@
 	position: relative;
 	padding: 12px 10px;
 	color: #fff;
-	font-size: 1.2em;
+	font-size: 20px;
 	font-weight: 400;
 	border-bottom: 4px solid #222;
 }
@@ -31,7 +31,7 @@
 	right: 10px;
 	display: inline-block;
 	padding: 6px 9px 5px;
-	font-family: Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 	line-height: 1;
 	background: #222;
@@ -58,6 +58,7 @@
 	padding: 10px;
 	color: #AAA;
 	text-decoration: none;
+	font-size: 16px;
 }
 .menu ul li a:hover {
 	background: #000;
@@ -75,7 +76,7 @@
 	background: #000;
 }
 .header .menu-toggle {
-	font-size: 1.2em;
+	font-size: 20px;
 	color: #AAA;
 	text-decoration: none;
 }
@@ -94,7 +95,8 @@
     letter-spacing: 1px;
 }
 
-.main h1 {
+.main h1,
+.about-main h1 {
     color: #fff;
     font-size: 52px;
     text-align: center;
@@ -103,14 +105,16 @@
     font-weight: 100;    
 }
 
-.main .content {
+.main .content,
+.about-main .content {
 	position: relative;
 	top: 150px;
     text-align: center;
 }
 
 .main .btn-primary,
-.about .btn-primary {
+.about .btn-primary,
+.about-supporting .btn-primary {
     border-radius: 0;
     padding: 12px 26px;
     font-size: 18px;
@@ -124,19 +128,22 @@
 }
 
 .supporting,
-.about {
+.about,
+.about-supporting {
     padding: 50px 0;
     text-align: center;
 }
 
 .supporting h2,
-.about h2 {
+.about h2,
+.about-supporting h2 {
     margin: 30px 0;
     font-size: 40px;
     font-weight: 300;    
 }
 
-.supporting p {
+.supporting p,
+.about-supporting p {
     font-size: 22px;
     font-weight: 100;
     letter-spacing: 0.5px;
@@ -154,4 +161,14 @@
     text-transform: uppercase;
     color: #aaa;
     font-size: 12px;
+}
+
+.about-main {
+    background: url("https://stories-rails.herokuapp.com/assets/about-main-5d7831840429815fe86338dd0b2918a8.jpg") no-repeat center center;
+    background-size: cover;
+    height: 700px;
+}
+
+.content .container {
+
 }

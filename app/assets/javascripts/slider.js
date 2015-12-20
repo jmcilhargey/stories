@@ -1,4 +1,4 @@
-$(document).ready(function () {
+var slider = function() {
     
     $('.menu-toggle').on('click', function(event){
     	event.preventDefault();
@@ -25,4 +25,7 @@ $(document).ready(function () {
     	}
     	
     });
-});
+};
+
+$(document).ready(slider);
+$(document).on('page:load', slider);
