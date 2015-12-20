@@ -2,8 +2,89 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body {
-	font-family: 'Roboto', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Oswald', sans-serif;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 250px;
+	height: 100%;
+	background: #333;
+	z-index: 100;
+}
+.menu h3 {
+	position: relative;
+	padding: 12px 10px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 400;
+	border-bottom: 4px solid #222;
+}
+.menu .menu-toggle {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	display: inline-block;
+	padding: 6px 9px 5px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	background: #222;
+	color: #AAA;
+	text-decoration: none;
+	vertical-align: top;
+}
+.menu .menu-toggle:hover {
+	color: #fff;
+}
+.menu ul {
+	list-style: none;
+	font-weight: 300;
+	border-top: 1px solid #151515;
+	border-bottom: 1px solid #454545;
+}
+.menu ul li {
+	border-top: 1px solid #454545;
+	border-bottom: 1px solid #151515;
+}
+.menu ul li a {
+	position: relative;
+	display: block;
+	padding: 10px;
+	color: #AAA;
+	text-decoration: none;
+}
+.menu ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+.menu ul li a i {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	opacity: .5;
+}
+
+.header {
+	padding: 10px 20px;
+	background: #000;
+}
+.header .menu-toggle {
+	font-size: 1.2em;
+	color: #AAA;
+	text-decoration: none;
+}
+.header .menu-toggle:hover {
+	color: #fff;
+}
+.header .menu-toggle i {
+	vertical-align: top;
+	margin: 5px 3px 0 0;
 }
 
 .main {
